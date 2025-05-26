@@ -1,26 +1,74 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
-header, footer {
-  background-color: #333;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
   color: white;
-  text-align: center;
-  padding: 1em;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
-main {
-  padding: 20px;
+.banner {
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  color: white;
 }
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.socials a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
   nav a {
     display: block;
