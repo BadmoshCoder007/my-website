@@ -1,2 +1,2 @@
 # my-website
-just a normal website
+just a simple testing website 
